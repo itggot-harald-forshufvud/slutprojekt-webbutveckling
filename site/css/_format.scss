@@ -1,14 +1,47 @@
+body {
+    margin: 0px;
+}
+
 .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(9, 1fr);
-    width: 100vw;
-    height: auto;
-    background-color: rgb(189, 15, 15);
+    width: auto;
+    height: 100vh;
+    background-color: rgb(201, 201, 201)
 }
 
 header{
     grid-column: span 2;
     grid-row: span 1;
     background-color: rgb(26, 94, 221);
+    margin: 5px;
+}
+
+.main{
+    background-color: rgb(51, 172, 51);
+    grid-row: span 4;
+    grid-column: span 2;
+    margin: 5px;
+}
+
+article{
+    grid-row: span 3;
+    grid-column: span 1;
+    background-color: hotpink;
+    margin: 5px;
+}
+
+aside{
+    grid-row: span 3;
+    grid-column: span 1;
+    background-color: rgb(138, 83, 32);
+    margin: 5px;
+}
+
+footer{
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: rgb(26, 94, 221);
+    margin: 5px;
 }
