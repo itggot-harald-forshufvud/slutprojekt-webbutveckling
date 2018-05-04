@@ -1,0 +1,14 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    width: 100vw;
+    height: auto;
+    background-color: rgb(189, 15, 15);
+}
+
+header{
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: rgb(26, 94, 221);
+}
