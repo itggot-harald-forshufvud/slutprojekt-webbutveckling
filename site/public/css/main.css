@@ -7,7 +7,8 @@ body {
   grid-template-rows: repeat(9, 1fr);
   width: auto;
   height: 100vh;
-  background-color: #c9c9c9; }
+  background-color: #c9c9c9;
+  text-align: center; }
 
 header {
   grid-column: span 2;
@@ -38,3 +39,6 @@ footer {
   grid-row: span 1;
   background-color: #1a5edd;
   margin: 5px; }
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif; }
