@@ -1,3 +1,5 @@
+@import '_vars.scss';
+
 body {
     margin: 0px;
 }
@@ -8,17 +10,26 @@ body {
     grid-template-rows: repeat(9, 1fr);
     width: auto;
     height: 100vh;
-    background-color: rgb(201, 201, 201);
+    background-color: $secondaryColor;
     text-align: center;
 }
 
 header{
     grid-column: span 2;
     grid-row: span 1;
-    background-color: rgb(26, 94, 221);
+    background-color: $primaryColor;
     margin: 5px;
 }
 
+nav{
+    grid-column: span 1;
+    background-color: aqua;
+    display: none;
+}
+
+.view {
+    display: block
+}
 .main{
     background-color: rgb(51, 172, 51);
     grid-row: span 4;
@@ -43,6 +54,6 @@ aside{
 footer{
     grid-column: span 2;
     grid-row: span 1;
-    background-color: rgb(26, 94, 221);
+    background-color: $primaryColor;
     margin: 5px;
 }

@@ -6,20 +6,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="/css/main.css">
 	<title>SXK</title>
 </head>
 
 <body>
+	<i class="material-icons " onclick="toggleMenu()">keyboard_arrow_left</i>
 	<div class="container">
 		<header>
-			<p>Stiftelsen Svenska Kryssarklubens Seglarskola</p>
+			<h1>Stiftelsen Svenska Kryssarklubens Seglarskola</h1>
 		</header>
+		<nav>
+			<div class="close"> <i class="material-icons keyboard_arrow_right" onclick="toggleMenu"></i>close</div>
+			<i class="material-icons">keyboard_arrow_left </i>
+			<i class="material-icons">keyboard_arrow_right </i>
+			<a href="./index.html"><p>Startsida</p></a>
+			<a href="./kurser.html"><p>Kursprogram</p></a> 
+			<a href="./info.html"><p>Om oss</p></a>
+		</nav>
 		<%= yield %>
 			<footer>
 				<p>FB Twitter Mail Insta</p>
 			</footer>
 	</div>
+	<script src="./js/nav.js"></script>
 </body>
 
 </html>

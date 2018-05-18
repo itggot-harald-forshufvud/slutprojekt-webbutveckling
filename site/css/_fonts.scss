@@ -1,15 +1,18 @@
-h1{
+@import '_vars.scss';
 
+p{
+	font-family: $primaryFont;
+}
+
+h1{
+	font-family: $primaryFont;
+	color: $tertiaryColor;
 }
 
 h2{
-
+	font-family: $primaryFont;
 }
 
 h3{
-
-}
-
-p{
-    font-family: 'Open Sans Condensed', sans-serif;
+	font-family: $primaryFont;
 }

@@ -1,3 +1,4 @@
+@import url(_vars.css);
 body {
   margin: 0px; }
 
@@ -15,6 +16,14 @@ header {
   grid-row: span 1;
   background-color: #1a5edd;
   margin: 5px; }
+
+nav {
+  grid-column: span 1;
+  background-color: aqua;
+  display: none; }
+
+.view {
+  display: block; }
 
 .main {
   background-color: #33ac33;
@@ -41,4 +50,14 @@ footer {
   margin: 5px; }
 
 p {
-  font-family: 'Open Sans Condensed', sans-serif; }
+  font-family: "Open Sans Condensed", sans-serif; }
+
+h1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #383838; }
+
+h2 {
+  font-family: "Open Sans Condensed", sans-serif; }
+
+h3 {
+  font-family: "Open Sans Condensed", sans-serif; }
