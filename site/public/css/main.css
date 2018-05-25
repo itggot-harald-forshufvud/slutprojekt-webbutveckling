@@ -18,12 +18,13 @@ header {
   margin: 5px; }
 
 nav {
-  grid-column: span 1;
   background-color: aqua;
-  display: none; }
-
-.view {
-  display: block; }
+  width: 50vw;
+  height: 50vh;
+  right: -50vw;
+  position: fixed;
+  top: 20vh;
+  transition: right ease-in-out 0.5s; }
 
 .main {
   background-color: #33ac33;
@@ -49,6 +50,9 @@ footer {
   background-color: #1a5edd;
   margin: 5px; }
 
+nav > ul {
+  list-style-type: none; }
+
 p {
   font-family: "Open Sans Condensed", sans-serif; }
 
@@ -61,3 +65,17 @@ h2 {
 
 h3 {
   font-family: "Open Sans Condensed", sans-serif; }
+
+.view {
+  right: 0vw; }
+
+.arrowActive {
+  transform: rotate(180deg);
+  right: 50vw !important; }
+
+.material-icons {
+  position: fixed;
+  top: 45vh;
+  right: 3vw;
+  font-size: 42px;
+  transition: right ease-in-out 0.5s, transform ease-in-out 0.2s; }

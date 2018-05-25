@@ -12,26 +12,28 @@
 </head>
 
 <body>
-	<i class="material-icons " onclick="toggleMenu()">keyboard_arrow_left</i>
+	<i class="material-icons" id="menuArrow" onclick="toggleMenu()">keyboard_arrow_left</i>
 	<div class="container">
 		<header>
 			<h1>Stiftelsen Svenska Kryssarklubens Seglarskola</h1>
 		</header>
 		<nav>
-			<div class="close"> <i class="material-icons keyboard_arrow_right" onclick="toggleMenu"></i>close</div>
-			<i class="material-icons">keyboard_arrow_left </i>
-			<i class="material-icons">keyboard_arrow_right </i>
-			<a href="./index.html"><p>Startsida</p></a>
-			<a href="./kurser.html"><p>Kursprogram</p></a> 
-			<a href="./info.html"><p>Om oss</p></a>
+			<div class="close">
+				<i class="material-icons keyboard_arrow_right" onclick="toggleMenu"></i>
+			</div>
+			<ul>
+				<li><a href="./index.html"><p>Startsida</p></a></li>
+				<li><a href="./kurser.html"><p>Kursprogram</p></a></li>
+				<li><a href="./info.html"><p>Om oss</p></a></li>
+			</ul>			
 		</nav>
 		<article class="main"></article>
 <article>
 </article>
 <aside></aside>
-			<footer>
-				<p>FB Twitter Mail Insta</p>
-			</footer>
+		<footer>
+			<p>FB Twitter Mail Insta</p>
+		</footer>
 	</div>
 	<script src="./js/nav.js"></script>
 </body>

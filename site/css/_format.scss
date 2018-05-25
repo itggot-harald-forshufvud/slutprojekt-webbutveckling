@@ -1,59 +1,64 @@
 @import '_vars.scss';
 
 body {
-    margin: 0px;
+	margin: 0px;
 }
 
 .container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    width: auto;
-    height: 100vh;
-    background-color: $secondaryColor;
-    text-align: center;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(9, 1fr);
+	width: auto;
+	height: 100vh;
+	background-color: $secondaryColor;
+	text-align: center;
 }
 
 header{
-    grid-column: span 2;
-    grid-row: span 1;
-    background-color: $primaryColor;
-    margin: 5px;
+	grid-column: span 2;
+	grid-row: span 1;
+	background-color: $primaryColor;
+	margin: 5px;
 }
 
 nav{
-    grid-column: span 1;
-    background-color: aqua;
-    display: none;
+	background-color: aqua;
+	width: 50vw;
+	height: 50vh;
+	right: -50vw;
+	position: fixed;
+	top: 20vh;
+	transition: right ease-in-out 0.5s;
 }
 
-.view {
-    display: block
-}
 .main{
-    background-color: rgb(51, 172, 51);
-    grid-row: span 4;
-    grid-column: span 2;
-    margin: 5px;
+	background-color: rgb(51, 172, 51);
+	grid-row: span 4;
+	grid-column: span 2;
+	margin: 5px;
 }
 
 article{
-    grid-row: span 3;
-    grid-column: span 1;
-    background-color: hotpink;
-    margin: 5px;
+	grid-row: span 3;
+	grid-column: span 1;
+	background-color: hotpink;
+	margin: 5px;
 }
 
 aside{
-    grid-row: span 3;
-    grid-column: span 1;
-    background-color: rgb(138, 83, 32);
-    margin: 5px;
+	grid-row: span 3;
+	grid-column: span 1;
+	background-color: rgb(138, 83, 32);
+	margin: 5px;
 }
 
 footer{
-    grid-column: span 2;
-    grid-row: span 1;
-    background-color: $primaryColor;
-    margin: 5px;
+	grid-column: span 2;
+	grid-row: span 1;
+	background-color: $primaryColor;
+	margin: 5px;
+}
+
+nav>ul {
+	list-style-type: none;
 }
