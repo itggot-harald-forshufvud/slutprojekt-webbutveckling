@@ -4,7 +4,7 @@ body {
 	margin: 0px;
 }
 
-.container{
+.container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(9, 1fr);
@@ -14,14 +14,14 @@ body {
 	text-align: center;
 }
 
-header{
+header {
 	grid-column: span 2;
 	grid-row: span 1;
 	background-color: $primaryColor;
 	margin: 5px;
 }
 
-nav{
+nav {
 	background-color: aqua;
 	width: 50vw;
 	height: 50vh;
@@ -31,28 +31,28 @@ nav{
 	transition: right ease-in-out 0.5s;
 }
 
-.main{
+.main {
 	background-color: rgb(51, 172, 51);
 	grid-row: span 4;
 	grid-column: span 2;
 	margin: 5px;
 }
 
-article{
+article {
 	grid-row: span 3;
 	grid-column: span 1;
 	background-color: hotpink;
 	margin: 5px;
 }
 
-aside{
+aside {
 	grid-row: span 3;
 	grid-column: span 1;
 	background-color: rgb(138, 83, 32);
 	margin: 5px;
 }
 
-footer{
+footer {
 	grid-column: span 2;
 	grid-row: span 1;
 	background-color: $primaryColor;
@@ -60,5 +60,25 @@ footer{
 }
 
 nav>ul {
+	height: 40vh;
 	list-style-type: none;
+	display: grid;
+	grid-template-columns: 1;
+	grid-template-rows: repeat(3, 1fr);
+	align-items: center;	
+}
+
+.kurs {
+	grid-row: span 1;
+	grid-column: span 1/2;
+}
+
+.minor {
+	grid-row: 2/3;
+	grid-column: span 2;
+	background-color: grey;
+	text-align: center;
+	a {
+		width: 50vw;
+	}
 }

@@ -51,7 +51,24 @@ footer {
   margin: 5px; }
 
 nav > ul {
-  list-style-type: none; }
+  height: 40vh;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center; }
+
+.kurs {
+  grid-row: span 1;
+  grid-column: span 1/2; }
+
+.minor {
+  grid-row: 2/3;
+  grid-column: span 2;
+  background-color: grey;
+  text-align: center; }
+  .minor a {
+    width: 50vw; }
 
 p {
   font-family: "Open Sans Condensed", sans-serif; }
@@ -66,12 +83,20 @@ h2 {
 h3 {
   font-family: "Open Sans Condensed", sans-serif; }
 
+a {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: #383838;
+  grid-column: span 1; }
+
 .view {
   right: 0vw; }
 
 .arrowActive {
   transform: rotate(180deg);
-  right: 50vw !important; }
+  right: 40vw !important;
+  z-index: 100; }
 
 .material-icons {
   position: fixed;

@@ -1,13 +1,14 @@
-.view{
+.view {
     right: 0vw;
 }
 
 .arrowActive {
     transform: rotate(180deg);
-    right: 50vw !important;
+    right: 40vw !important;
+    z-index: 100;
 }
 
-.material-icons{
+.material-icons {
     position: fixed;
     top: 45vh;
     right: 3vw;

@@ -1,18 +1,26 @@
 @import '_vars.scss';
 
-p{
+p {
 	font-family: $primaryFont;
 }
 
-h1{
+h1 {
 	font-family: $primaryFont;
 	color: $tertiaryColor;
 }
 
-h2{
+h2 {
 	font-family: $primaryFont;
 }
 
-h3{
+h3 {
 	font-family: $primaryFont;
+}
+
+a {
+	font-family: $primaryFont;
+	font-size: 24px;
+	text-decoration: none;
+	color: $tertiaryColor;
+	grid-column: span 1;
 }
